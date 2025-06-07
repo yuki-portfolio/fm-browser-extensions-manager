@@ -43,7 +43,7 @@ body {
 }
 
 .logo-extensions {
-    width: 55%;
+    width: 200px;
     padding: 10px;
 }
 
@@ -206,4 +206,61 @@ input:checked + .slider:before {
 .remove-button:active {
     transform: scale(0.95);
     transition: transform 0ms;
+}
+
+
+/* -----------------------FOR DESKTOP------------------------ */
+
+@media (min-width: 1024px) {
+
+    body {
+        padding: 10px 150px 20px 150px;
+    }
+
+    .header-block {
+        width: 99%;
+        margin: 20px auto ;
+        height: 60px;
+    }
+
+    .logo-extensions {
+        width: 200px;
+    }
+
+    .mode-button {
+        margin: 5px 5px;
+    }
+
+    .extensions-block {
+        margin: 70px 10px 30px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons-category {
+        margin-top: 40px;
+    }
+
+    .category-button {
+        margin-right: 10px;
+    }
+
+    .main-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .block {
+        width: 29.4%;
+        height: 250px;
+    }
+
+    .buttons-block {
+        margin-top: 70px;
+    }
+
+    .logo-img {
+        flex-shrink: 0;
+        width: 80px;
+    }
 }
