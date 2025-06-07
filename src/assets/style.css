@@ -81,8 +81,8 @@ body {
 }
 
 .logo-img {
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    flex-shrink: 0;
 }
 
 .text-block {
