@@ -1,6 +1,19 @@
+
+:root {
+    --small-shadow: 0px 1px 3px rgb(188, 199, 212);
+    --color-of-shadow: #d2d8e0;
+    --dark-text-color: #17204d;
+    --width-border: 1px solid;
+    --light-inside-color: #fcfdff;
+    --red-color: #bd201e;
+}
+
+
+
 body {
     font-family: 'Noto Sans';
     background-color: #ecf3fd;
+    color: var(--dark-text-color);
 }
 
 .body-block {
@@ -12,9 +25,21 @@ body {
 .header-block {
     display: flex;
     justify-content: space-between;
-    background-color: #fcfdff;
+    background-color: var(--light-inside-color);
     border-radius: 10px;
     margin: 20px 15px 20px 15px;
+    border: var(--width-border);
+    border-color: var(--color-of-shadow);
+    box-shadow: var(--small-shadow);
+}
+
+.mode-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 7px 7px 0px 0px;
+    transition: filter 400ms;
 }
 
 .logo-extensions {
@@ -27,29 +52,28 @@ body {
     margin-top: 40px;
 }
 
-.mode-button {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    margin: 7px 7px 0px 0px;
-}
-
 .category-button {
-    background-color: #fcfdff;
-    border: none;
+    background-color: var(--light-inside-color);
     font-size: 22px;
     border-radius: 27px;
     padding: 11px 22px 11px 22px;
     margin-bottom: 25px;
+    color: var(--dark-text-color);
+    border: var(--width-border);
+    border-color: var(--color-of-shadow);
+    box-shadow: var(--small-shadow);
+    transition: all 200ms;
 }
 
 .block {
     display: block;
-    background-color: #fcfdff;
+    background-color: var(--light-inside-color);
     margin: 20px 10px 7px 10px;
     padding: 0px 19px 19px 19px;
     border-radius: 15px;
+    border: var(--width-border);
+    border-color: var(--color-of-shadow);
+    box-shadow: var(--small-shadow);
 }
 
 .info-block {
@@ -68,13 +92,13 @@ body {
     line-height: 23px;
 }
 
-.text-block p {
-    color: #6d6f74;
-}
-
 .text-block h2 {
     margin-top: 28px;
     margin-bottom: 0px;
+}
+
+.text-block p {
+    color: #6d6f74;
 }
 
 .buttons-block {
@@ -84,11 +108,13 @@ body {
 
 .remove-button {
     border-width: 1px;
-    border-color: #d8e2f1;
-    background-color: #fcfdff;
+    background-color: var(--light-inside-color);
     border-radius: 20px;
     padding: 10px 14px 10px 14px;
     font-size: 17px;
+    border: var(--width-border);
+    border-color: var(--color-of-shadow);
+    transition: filter 200ms;
 }
 
 /* ----------------- SWITCH КНОПКА ------------------ */
@@ -98,9 +124,12 @@ body {
   display: inline-block;
   width: 40px;
   height: 24px;
+  margin-top: 9px;
 }
 
-.switch input {display:none;}
+.switch input {
+    display:none;
+}
 
 .slider {
   position: absolute;
@@ -128,17 +157,53 @@ body {
   border-radius: 50%;
 }
 
-
 input:checked + .slider {
-  background-color: #bd201e;
+  background-color: var(--red-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #bd201e;
+  box-shadow: 0 0 1px var();
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(16px);
+}
+
+
+/* -------------------ANIMATION---------------------- */
+
+.mode-button:hover {
+    cursor: pointer;
+    filter: invert(1);
+    transition: filter 400ms;
+}
+
+.mode-button:active {
+    transform: scale(0.95);
+    transition: transform 0ms;
+}
+
+.category-button:hover {
+    background-color: var(--red-color);
+    color: var(--light-inside-color);
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.category-button:active {
+    transform: scale(0.95);
+    transition: all 0ms;
+}
+
+.remove-button:hover {
+    cursor: pointer;
+    filter: invert(1);
+    transition: filter 200ms;
+}
+
+.remove-button:active {
+    transform: scale(0.95);
+    transition: transform 0ms;
 }
