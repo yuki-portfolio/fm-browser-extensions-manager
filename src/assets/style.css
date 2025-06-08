@@ -6,6 +6,8 @@
     --width-border: 1px solid;
     --light-inside-color: #fcfdff;
     --red-color: #bd201e;
+    --light-dark-color: #1f2535;
+    --shadow-dark-mode: #363c52;
 }
 
 
@@ -263,4 +265,44 @@ input:checked + .slider:before {
         flex-shrink: 0;
         width: 80px;
     }
+}
+
+
+/* --------------------------DARK THEME------------------------ */
+
+body {
+    background: #050A1D;
+    background: linear-gradient(180deg,rgba(5, 10, 29, 1) 0%, rgba(7, 16, 47, 1) 50%, rgba(10, 21, 64, 1) 100%);
+    color: var(--light-inside-color);
+}
+
+.header-block {
+    background-color: var(--light-dark-color);
+    border: none;
+    box-shadow: none;
+}
+
+
+
+.category-button {
+    color: var(--light-inside-color);
+    background-color: var(--light-dark-color);
+    box-shadow: none;
+    border-color: var(--shadow-dark-mode);
+}
+
+.block {
+    background-color: var(--light-dark-color);
+    border-color: var(--shadow-dark-mode);
+    box-shadow: none;
+}
+
+.text-block p {
+    color: #c3c7d2;
+}
+
+.remove-button {
+    background-color: var(--light-dark-color);
+    color: var(--light-inside-color);
+    border-color: var(--shadow-dark-mode);
 }
