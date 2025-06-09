@@ -16,13 +16,11 @@ body {
     font-family: 'Noto Sans';
     background-color: #ecf3fd;
     color: var(--dark-text-color);
-}
-
-.body-block {
     display: block;
     justify-content: center;
     text-align: center;
 }
+
 
 .header-block {
     display: flex;
@@ -249,18 +247,19 @@ input:checked + .slider:before {
         margin-right: 10px;
     }
 
-    .main-block {
+    ul {
         display: flex;
         flex-wrap: wrap;
+        padding: 0;
     }
     
     .block {
-        width: 29.4%;
+        width: 28%;
         height: 250px;
     }
 
     .buttons-block {
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     .logo-img {
