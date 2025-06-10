@@ -270,7 +270,7 @@ input:checked + .slider:before {
 
 
 /* --------------------------DARK THEME------------------------ */
-
+/* 
 body {
     background: #050A1D;
     background: linear-gradient(180deg,rgba(5, 10, 29, 1) 0%, rgba(7, 16, 47, 1) 50%, rgba(10, 21, 64, 1) 100%);
@@ -310,4 +310,4 @@ body {
 
 .logo-text {
     fill: var(--light-inside-color);
-}
+} */
