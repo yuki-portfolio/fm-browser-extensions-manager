@@ -1,123 +1,138 @@
-
 :root {
-    --small-shadow: 0px 1px 3px rgb(188, 199, 212);
-    --color-of-shadow: #d2d8e0;
-    --dark-text-color: #17204d;
-    --width-border: 1px solid;
-    --light-inside-color: #fcfdff;
-    --red-color: #bd201e;
-    --light-dark-color: #1f2535;
-    --shadow-dark-mode: #363c52;
+  --small-shadow: 0px 1px 3px rgb(188, 199, 212);
+  --shadow-lm: #d2d8e0;
+  --text-color-lm: #17204d;
+  --width-border: 1px solid;
+  --block-color-lm: #fcfdff;
+  --red-color: #bd201e;
+  --block-color-dm: #1f2535;
+  --shadow-dm: #363c52;
+  --border-edges-sharp: 15px;
+  --border-edges-round: 27px;
 }
-
-
 
 body {
-    font-family: 'Noto Sans';
-    background-color: #ecf3fd;
-    color: var(--dark-text-color);
-    display: block;
-    justify-content: center;
-    text-align: center;
+  font-family: "Noto Sans";
+  background-color: #ecf3fd;
+  color: var(--text-color-lm);
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+ 
 }
 
-
 .header-block {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--light-inside-color);
-    border-radius: 10px;
-    margin: 20px 15px 20px 15px;
-    border: var(--width-border);
-    border-color: var(--color-of-shadow);
-    box-shadow: var(--small-shadow);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--block-color-lm);
+  border-radius: var(--border-edges-sharp);
+  border: var(--width-border);
+  border-color: var(--shadow-lm);
+  box-shadow: var(--small-shadow);
 }
 
 .mode-button {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    margin: 7px 7px 0px 0px;
-    transition: filter 400ms;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: var(--border-edges-sharp);
+  margin: 0.5em;
+  padding: 0;
+  transition: filter 400ms;
 }
 
 .logo-extensions {
-    width: 200px;
-    padding: 10px;
+  width: 11em;
+  padding: 10px;
 }
 
-.extensions-block h1{
-    font-size: 38px;
-    margin-top: 40px;
+.extensions-block h1 {
+  font-size: 38px;
+  margin-top: 1.5em;
 }
 
 .category-button {
-    background-color: var(--light-inside-color);
-    font-size: 22px;
-    border-radius: 27px;
-    padding: 11px 22px 11px 22px;
-    margin-bottom: 25px;
-    color: var(--dark-text-color);
-    border: var(--width-border);
-    border-color: var(--color-of-shadow);
-    box-shadow: var(--small-shadow);
-    transition: all 200ms;
+  background-color: var(--block-color-lm);
+  font-size: 22px;
+  border-radius: var(--border-edges-round);
+  padding: 0.7rem 1.4rem;
+  color: var(--text-color-lm);
+  border: var(--width-border);
+  border-color: var(--shadow-lm);
+  box-shadow: var(--small-shadow);
+  transition: all 200ms;
+}
+
+ul {
+  padding: 0;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .block {
-    height: 200px;
-    display: block;
-    background-color: var(--light-inside-color);
-    margin: 20px 10px 7px 10px;
-    padding: 0px 19px 19px 19px;
-    border-radius: 15px;
-    border: var(--width-border);
-    border-color: var(--color-of-shadow);
-    box-shadow: var(--small-shadow);
+  width: 25em;
+  height: 12em;
+  margin: 1em auto;
+  display: block;
+  background-color: var(--block-color-lm);
+  padding: 1rem;
+  border-radius: var(--border-edges-sharp);
+  border: var(--width-border);
+  border-color: var(--shadow-lm);
+  box-shadow: var(--small-shadow);
 }
 
 .info-block {
-    display: flex;
+  display: flex;
 }
 
 .logo-img {
-    width: 70px;
-    flex-shrink: 0;
+  width: 3.5em;
+  flex-shrink: 0;
+  padding-bottom: 4em;
 }
 
 .text-block {
-    text-align: left;
-    margin-left: 17px;
-    margin-right: 20px;
-    line-height: 23px;
+  text-align: left;
+  margin-left: 17px;
+  margin-right: 20px;
+  line-height: 23px;
 }
 
 .text-block h2 {
-    margin-top: 28px;
-    margin-bottom: 0px;
+  margin-top: 0.5em;
 }
 
 .text-block p {
-    color: #6d6f74;
+  color: #6d6f74;
 }
 
 .buttons-block {
-    padding-top: 10%;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
 }
 
 .remove-button {
-    border-width: 1px;
-    background-color: var(--light-inside-color);
-    border-radius: 20px;
-    padding: 10px 14px 10px 14px;
-    font-size: 17px;
-    border: var(--width-border);
-    border-color: var(--color-of-shadow);
-    transition: filter 200ms;
+  border-width: 1px;
+  background-color: var(--block-color-lm);
+  border-radius: 27px;
+  padding: 0.7rem 1rem;
+  font-size: 17px;
+  border: var(--width-border);
+  border-color: var(--shadow-lm);
+  transition: filter 200ms;
 }
+
+
+
+
+
+
+
+
 
 /* ----------------- SWITCH КНОПКА ------------------ */
 
@@ -130,7 +145,7 @@ body {
 }
 
 .switch input {
-    display:none;
+  display: none;
 }
 
 .slider {
@@ -141,8 +156,8 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 34px;
 }
 
@@ -154,8 +169,8 @@ body {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
@@ -173,101 +188,97 @@ input:checked + .slider:before {
   transform: translateX(16px);
 }
 
-
 /* -------------------ANIMATION---------------------- */
 
 .mode-button:hover {
-    cursor: pointer;
-    filter: invert(1);
-    transition: filter 400ms;
+  cursor: pointer;
+  filter: invert(1);
+  transition: filter 400ms;
 }
 
 .mode-button:active {
-    transform: scale(0.95);
-    transition: transform 0ms;
+  transform: scale(0.95);
+  transition: transform 0ms;
 }
 
 .category-button:hover {
-    background-color: var(--red-color);
-    color: var(--light-inside-color);
-    transition: all 200ms;
-    cursor: pointer;
+  background-color: var(--red-color);
+  color: var(--block-color-lm);
+  transition: all 200ms;
+  cursor: pointer;
 }
 
 .category-button:active {
-    transform: scale(0.95);
-    transition: all 0ms;
+  transform: scale(0.95);
+  transition: all 0ms;
 }
 
 .remove-button:hover {
-    cursor: pointer;
-    filter: invert(1);
-    transition: filter 200ms;
+  cursor: pointer;
+  filter: invert(1);
+  transition: filter 200ms;
 }
 
 .remove-button:active {
-    transform: scale(0.95);
-    transition: transform 0ms;
+  transform: scale(0.95);
+  transition: transform 0ms;
 }
-
 
 /* -----------------------FOR DESKTOP------------------------ */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
+  body {
+    padding: 10px 150px 20px 150px;
+  }
 
-    body {
-        padding: 10px 150px 20px 150px;
-    }
+  .header-block {
+    width: 99%;
+    margin: 20px auto;
+    height: 60px;
+  }
 
-    .header-block {
-        width: 99%;
-        margin: 20px auto ;
-        height: 60px;
-    }
+  .logo-extensions {
+    width: 200px;
+  }
 
-    .logo-extensions {
-        width: 200px;
-    }
+  .mode-button {
+    margin: 5px 5px;
+  }
 
-    .mode-button {
-        margin: 5px 5px;
-    }
+  .extensions-block {
+    margin: 70px 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .extensions-block {
-        margin: 70px 10px 30px 10px;
-        display: flex;
-        justify-content: space-between;
-    }
+  .buttons-category {
+    margin-top: 40px;
+  }
 
-    .buttons-category {
-        margin-top: 40px;
-    }
+  .category-button {
+    margin-right: 10px;
+  }
 
-    .category-button {
-        margin-right: 10px;
-    }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-    }
-    
-    .block {
-        width: 28%;
-        height: 250px;
-    }
+  .block {
+    width: 28%;
+    height: 250px;
+  }
 
-    .buttons-block {
-        margin-top: 10%;
-    }
+  .buttons-block {
+    margin-top: 10%;
+  }
 
-    .logo-img {
-        flex-shrink: 0;
-        width: 80px;
-    }
-}
-
+  .logo-img {
+    flex-shrink: 0;
+    width: 80px;
+  }
+} */
 
 /* --------------------------DARK THEME------------------------ */
 /* 
