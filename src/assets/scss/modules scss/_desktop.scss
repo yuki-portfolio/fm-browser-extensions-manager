@@ -1,0 +1,19 @@
+
+@media (min-width: 1024px) {
+  body {
+    margin: 2em 5em 2em 5em;
+  }
+
+  .extensions-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttons-category {
+    padding-top: 4em;
+  }
+
+  .main-block {
+    margin-top: 0;
+  }
+}
