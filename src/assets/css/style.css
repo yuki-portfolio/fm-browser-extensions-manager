@@ -21,7 +21,6 @@ body {
   justify-content: center;
   text-align: center;
   padding: 1em;
- 
 }
 
 .header-block {
@@ -65,6 +64,9 @@ body {
   box-shadow: var(--small-shadow);
   transition: all 200ms;
 }
+
+
+
 
 .main-block {
   padding: 0;

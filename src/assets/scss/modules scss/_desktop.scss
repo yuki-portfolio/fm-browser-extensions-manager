@@ -1,12 +1,18 @@
+@forward 'variables';
 
 @media (min-width: 1024px) {
   body {
     margin: 2em 5em 2em 5em;
   }
 
+  .header-block {
+    margin: 0 4em;
+  }
+
   .extensions-block {
     display: flex;
     justify-content: space-between;
+    padding: 0px 4em;
   }
 
   .buttons-category {
