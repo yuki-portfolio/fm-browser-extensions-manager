@@ -1,0 +1,25 @@
+@import 'variables'; 
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  background-color: $block-color-lm;
+  border-radius: $border-edges-sharp;
+  border: $width-border;
+  border-color: $shadow-lm;
+  box-shadow: $small-shadow;
+}
+
+.header-block__logo {
+  width: 11em;
+  padding: 13px 10px 10px 10px;
+}
+
+.extensions-block {
+    h1 {
+        font-size: 38px;
+        margin-top: 1.5em;
+    }
+}
+
+

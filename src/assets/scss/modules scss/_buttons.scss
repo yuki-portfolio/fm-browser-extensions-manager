@@ -1,0 +1,135 @@
+@forward 'variables';
+
+.header-block__theme-mode {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: $border-edges-sharp;
+  margin: 0.5em;
+  padding: 0;
+  transition: all 200ms;
+}
+
+.header-block__theme-mode:hover {
+  background-color: $hover-color;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.header-block__theme-mode:focus {
+  outline: $focus-effect;
+}
+
+.header-block__theme-mode:active {
+  transform: scale(0.95);
+  transition: transform 0ms;
+}
+
+.category-button {
+  background-color: $block-color-lm;
+  font-size: 22px;
+  border-radius: $border-edges-round;
+  padding: 0.7rem 1.4rem;
+  color: $text-color-lm;
+  border: $width-border;
+  border-color: $shadow-lm;
+  box-shadow: $small-shadow;
+  transition: all 200ms;
+}
+
+.category-button:hover {
+  background-color: $red-color;
+  color: $block-color-lm;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.category-button:focus {
+  outline: $focus-effect;
+}
+
+.category-button:active {
+  transform: scale(0.95);
+  background-color: $block-color-lm;
+  color: #6c6f82;
+  transition: all 0ms;
+}
+
+.remove-button {
+  border-width: 1px;
+  background-color: $block-color-lm;
+  border-radius: 27px;
+  padding: 0.7rem 1rem;
+  font-size: 17px;
+  border: $width-border;
+  border-color: $shadow-lm;
+  transition: all 200ms;
+}
+
+.remove-button:hover {
+  cursor: pointer;
+  background-color: $red-color;
+  color: $block-color-lm;
+  transition: all 200ms;
+}
+
+.remove-button:focus {
+  outline: $focus-effect;
+}
+
+.remove-button:active {
+  transform: scale(0.95);
+  transition: transform 0ms;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin: 9px 0px 0px 0px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: $red-color;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(16px);
+}

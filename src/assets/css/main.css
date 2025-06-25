@@ -1,4 +1,228 @@
-@import url(blocks/header);
-@import url(blocks/info-blocks);
-@import url(blocks/_dark-theme.scss);
-@import url(blocks/_desktop.scss);/*# sourceMappingURL=main.css.map */
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fcfdff;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #d2d8e0;
+  box-shadow: 0px 1px 3px rgb(188, 199, 212);
+}
+
+.header-block__logo {
+  width: 11em;
+  padding: 13px 10px 10px 10px;
+}
+
+.extensions-block h1 {
+  font-size: 38px;
+  margin-top: 1.5em;
+}
+
+.main-block__section {
+  width: 25em;
+  height: 12em;
+  margin: 1em auto;
+  display: block;
+  background-color: #fcfdff;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #d2d8e0;
+  box-shadow: 0px 1px 3px rgb(188, 199, 212);
+}
+
+.section__info-block {
+  display: flex;
+}
+
+.logo-img {
+  width: 3.5em;
+  flex-shrink: 0;
+  padding-bottom: 4em;
+}
+
+.section__text-block {
+  text-align: left;
+  margin-left: 17px;
+  margin-right: 20px;
+  line-height: 23px;
+}
+
+.section__text-block h2 {
+  margin-top: 0.5em;
+}
+
+.section__text-block p {
+  color: #6d6f74;
+}
+
+.section__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 2em 5em 2em 5em;
+  }
+  .header-block {
+    margin: 0 4em;
+  }
+  .extensions-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 4em;
+  }
+  .buttons-category {
+    padding-top: 4em;
+  }
+  .main-block {
+    margin-top: 0;
+  }
+}
+.header-block__theme-mode {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 15px;
+  margin: 0.5em;
+  padding: 0;
+  transition: all 200ms;
+}
+
+.header-block__theme-mode:hover {
+  background-color: #c6c6c4;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.header-block__theme-mode:focus {
+  outline: 2px solid #bd201e;
+}
+
+.header-block__theme-mode:active {
+  transform: scale(0.95);
+  transition: transform 0ms;
+}
+
+.category-button {
+  background-color: #fcfdff;
+  font-size: 22px;
+  border-radius: 27px;
+  padding: 0.7rem 1.4rem;
+  color: #17204d;
+  border: 1px solid;
+  border-color: #d2d8e0;
+  box-shadow: 0px 1px 3px rgb(188, 199, 212);
+  transition: all 200ms;
+}
+
+.category-button:hover {
+  background-color: #bd201e;
+  color: #fcfdff;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.category-button:focus {
+  outline: 2px solid #bd201e;
+}
+
+.category-button:active {
+  transform: scale(0.95);
+  background-color: #fcfdff;
+  color: #6c6f82;
+  transition: all 0ms;
+}
+
+.remove-button {
+  border-width: 1px;
+  background-color: #fcfdff;
+  border-radius: 27px;
+  padding: 0.7rem 1rem;
+  font-size: 17px;
+  border: 1px solid;
+  border-color: #d2d8e0;
+  transition: all 200ms;
+}
+
+.remove-button:hover {
+  cursor: pointer;
+  background-color: #bd201e;
+  color: #fcfdff;
+  transition: all 200ms;
+}
+
+.remove-button:focus {
+  outline: 2px solid #bd201e;
+}
+
+.remove-button:active {
+  transform: scale(0.95);
+  transition: transform 0ms;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin: 9px 0px 0px 0px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #bd201e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+body {
+  font-family: "Noto Sans";
+  background-color: #ecf3fd;
+  color: #17204d;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.main-block {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=main.css.map */
